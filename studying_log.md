@@ -22,3 +22,29 @@ python manage.py migrate
 
 Viewing the Project
 python manage.py runserver
+
+
+python manage.py makemigrations studying_logs
+
+python manage.py migrate
+
+Creating a Superuser
+python manage.py createsuperuser
+
+username - chinom
+email - chinomsokoye@aol.com
+password - Chioarhe@1
+
+Django Shell
+python manage.py shell
+
+from studying_logs.models import Topic, Entry
+topics = Topic.objects.all()
+entries = Entry.objects.all()
+for topic, entry in topics, entries:
+    print(topic.id, entry.id, topic, entry)
+
+t = Topic.objects.all()
+t.text
+t.date_added
+
